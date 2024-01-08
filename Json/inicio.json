@@ -1,0 +1,52 @@
+{
+    "productos":[
+        {
+            "id" :1,
+            "nombre" : "Play 5",
+            "tipo":"sony",
+            "precio" : 499.99 ,
+            "descripción" : "Consola de sony de ultima generación",
+            "imagen":"/IMG/play5.jpg"
+        },
+        {
+            "id": 2,
+            "nombre" : "Xbox Series X",
+            "tipo":"xbox",
+            "precio" : 399.99,
+            "descripción": "Consola de Microsoft de ultima generación",
+            "imagen": "/IMG/xbox.jpg"
+        },
+        {
+            "id": 3,
+            "nombre" : "Ordenador Gaming",
+            "tipo":"pc",
+            "precio" : 799.99,
+            "descripción" : "Ordenador Gaming con procesador ryzen 5",
+            "imagen" : "/IMG/PC.jpg"
+        },
+        {
+            "id":4,
+            "nombre":"Nintendo Switch",
+            "tipo":"nintendo",
+            "precio": 329.99,
+            "descripción": "Consola de nintendo de última generación",
+            "imagen": "/IMG/nintendoswitch.jpg"
+        },
+        {
+            "id":5,
+            "nombre":"Mando Play 5",
+            "tipo":"sony",
+            "precio": 59.99,
+            "descripción":"Mando nuevo de play 5",
+            "imagen":"/IMG/mandoplay5.jpg"
+        },
+        {
+            "id":6,
+            "nombre":"Mando de Xbox",
+            "tipo":"xbox",
+            "precio":59.99,
+            "descripción":"Mando nuevo de xbox",
+            "imagen":"/IMG/mandoxbox_.jpg"
+        }
+    ]
+}

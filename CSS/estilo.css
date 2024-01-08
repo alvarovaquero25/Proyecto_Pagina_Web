@@ -1,0 +1,60 @@
+.logo {
+    width: 130px;
+}
+.carrito{
+    width: 50px;
+    height: 50px;
+} 
+nav {
+    background-color: black;
+    width: 100%;
+}
+.menu_horizontal {
+    list-style: none;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+li:hover{
+    background: rgb(220, 43, 43);
+}
+.imagen_xbox {
+    text-align: start;
+    align-items: flex-start;
+    margin-left: 0px;
+    width: 307px;
+    height: 260px;
+}
+.imagen_pc{
+    width: 100%;
+    height: 220px;
+}
+.imagen_play5{
+    width: 100%;
+    height: 220px;
+}
+.boton{
+    border-color: black;
+}
+.botonlista{
+    background-color: black;
+    border-color: black;
+    color: white;
+}
