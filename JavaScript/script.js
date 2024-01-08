@@ -31,31 +31,18 @@ function creartarjeta_inicio(resultados) {
     });
 }
 function agregarcarrito(index) {
+    var carrito = $("#carrito");
     if (index >= 0 && index < dataset.length) {
         var element = dataset[index];
-        carritoProductos.push({ nombre: element.nombre, precio: element.precio });
-        totalCarrito += element.precio;
-        actualizarCarrito();
+        var li = $("<li>").text(element.nombre + " , " + element.precio);
+        carrito.append(li);
     }
 }
-function actualizarCarrito() {
-    var carrito = $("#carrito");
-    carrito.empty();
-
-    carritoProductos.forEach(function (producto) {
-        var li = $("<li>").text(producto.nombre + " , " + producto.precio);
-        carrito.append(li);
-    });
-
-    // Mostrar el total en el carrito
-    carrito.append($("<li>").text("Total: $" + totalCarrito.toFixed(2)));
-}
 function borrarcarro() {
-    carritoProductos = [];
-    totalCarrito = 0;
-    actualizarCarrito();
+    var total = $("#total");
+    total.nextAll().remove();
+    totalCarrito = 0; 
 }
-
 function buscarproducto() {
     var buscador = $('#buscador').val().toLowerCase();
     var resultados = dataset.filter(function (producto) {
@@ -64,4 +51,20 @@ function buscarproducto() {
     var id_tarjeta = $("#row");
     id_tarjeta.empty();
     creartarjeta_inicio(resultados);
+}
+function calcularTotalCarrito() {
+    var carrito = $("#carrito");
+    var total = 0;
+    carrito.find("li").each(function () {
+        var productoNombre = $(this).text().split(" , ")[0];
+        var producto = dataset.find(function (element) {
+            return element.nombre === productoNombre;
+        });
+
+        if (producto) {
+            total += parseFloat(producto.precio);
+        }
+    });
+
+    return total;
 }
