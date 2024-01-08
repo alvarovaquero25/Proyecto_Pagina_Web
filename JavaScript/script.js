@@ -14,7 +14,7 @@ function creartarjeta_inicio(resultados) {
     id_tarjeta.innerHTML = "";
     resultados.forEach(function(element, index) {
         var div_tarjeta = document.createElement("div");
-        div_tarjeta.className = "col-xxl-3 col-md-3 col-12 ";
+        div_tarjeta.className = "col-xxl-4 col-md-4 col-12 d-flex align-items-center";
         div_tarjeta.innerHTML = `
             <div class="card" style="width: 18rem;">
                 <img src=${element.imagen}>
