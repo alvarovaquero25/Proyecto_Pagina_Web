@@ -46,7 +46,7 @@
             "tipo":"xbox",
             "precio":59.99,
             "descripción":"Mando nuevo de xbox",
-            "imagen":"IMG/mandoxbox_.jpg"
+            "imagen":"/IMG/mandoxbox_.jpg"
         }
     ]
 }
