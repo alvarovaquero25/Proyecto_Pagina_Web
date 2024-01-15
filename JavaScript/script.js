@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", init);
 var dataset;
 var totalCarrito = 0;
 function init() {
-    fetch('/src/Json/inicio.json')
+    fetch('/Json/inicio.json')
         .then((response) => response.json())
         .then((data) => {
             dataset = data.productos;
