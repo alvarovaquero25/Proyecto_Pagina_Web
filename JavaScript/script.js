@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", init);
 var dataset;
 var totalCarrito = 0;
 function init() {
-    fetch('/Json/inicio.json')
+    fetch('/src/Json/inicio.json')
         .then((response) => response.json())
         .then((data) => {
             dataset = data.productos;
@@ -56,7 +56,6 @@ function calcularTotalCarrito() {
     var carrito = $("#carrito");
     var total = 0;
     carrito.find("li").each(function () {
-        var productoNombre = $(this).text().split(" , ")[0];
         var producto = dataset.find(function (element) {
             return element.nombre === productoNombre;
         });

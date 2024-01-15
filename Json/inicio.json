@@ -6,7 +6,7 @@
             "tipo":"sony",
             "precio" : 499.99 ,
             "descripción" : "Consola de sony de ultima generación",
-            "imagen":"/IMG/play5.jpg"
+            "imagen":"/src/IMG/play5.jpg"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "tipo":"xbox",
             "precio" : 399.99,
             "descripción": "Consola de Microsoft de ultima generación",
-            "imagen": "/IMG/xbox.jpg"
+            "imagen": "/src/IMG/xbox.jpg"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "tipo":"pc",
             "precio" : 799.99,
             "descripción" : "Ordenador Gaming con procesador ryzen 5",
-            "imagen" : "/IMG/PC.jpg"
+            "imagen" : "/src/IMG/PC.jpg"
         },
         {
             "id":4,
@@ -30,7 +30,7 @@
             "tipo":"nintendo",
             "precio": 329.99,
             "descripción": "Consola de nintendo de última generación",
-            "imagen": "/IMG/nintendoswitch.jpg"
+            "imagen": "/src/IMG/nintendoswitch.jpg"
         },
         {
             "id":5,
@@ -38,7 +38,7 @@
             "tipo":"sony",
             "precio": 59.99,
             "descripción":"Mando nuevo de play 5",
-            "imagen":"/IMG/mandoplay5.jpg"
+            "imagen":"/src/IMG/mandoplay5.jpg"
         },
         {
             "id":6,
@@ -46,7 +46,7 @@
             "tipo":"xbox",
             "precio":59.99,
             "descripción":"Mando nuevo de xbox",
-            "imagen":"/IMG/mandoxbox_.jpg"
+            "imagen":"/src/IMG/mandoxbox_.jpg"
         }
     ]
 }
